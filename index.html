@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nisarga Family Restaurant and Dhaba</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            --bg-color: #f8f8f8; /* Default background color */
+            --text-color: #333; /* Default text color */
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        section {
+            padding: 20px;
+        }
+        h2 {
+            color: var(--text-color);
+            border-bottom: 1px solid var(--text-color); /* Added border to make h2 more visible */
+            padding-bottom: 5px; /* Added padding to h2 for better spacing */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        @media screen and (max-width: 600px) {
+            th, td {
+                padding: 8px;
+            }
+        }
+        /* Dark mode styles */
+        body.dark-mode {
+            --bg-color: #333;
+            --text-color: #c0c0c0; /* Light gray text color in dark mode */
+        }
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nisarga Family Restaurant and Dhaba</h1>
+        <p>Address: B.H. Road Nagappa Block Gauribidanur-561208</p>
+        <p>Phone Number: 9880369368</p>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    </header>
+
+    <section>
+        <h2>Veg Rice Items</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dish Name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Ghee Rice</td><td>80</td></tr>
+                <tr><td>Tomato Rice</td><td>60</td></tr>
+                <tr><td>Zeera Rice</td><td>80</td></tr>
+                <tr><td>Pudeena Rice</td><td>80</td></tr>
+                <tr><td>Kaju Rice</td><td>100</td></tr>
+                <tr><td>Veg Biryani</td><td>120</td></tr>
+                <tr><td>Curd Rice</td><td>80</td></tr>
+                <tr><td>Veg Fried Rice</td><td>80</td></tr>
+                <tr><td>White Rice</td><td>40</td></tr>
+                <tr><td>White Rice ½ plate</td><td>20</td></tr>
+                <tr><td>Gobi Rice</td><td>100</td></tr>
+            </tbody>
+        </table>
+
+        <h2>Panneer Items</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dish Name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Panneer Guntur</td><td>150</td></tr>
+                <tr><td>Panneer Kabab</td><td>150</td></tr>
+                <tr><td>Panneer Pepper Dry</td><td>150</td></tr>
+                <tr><td>Panneer Chilly</td><td>150</td></tr>
+                <tr><td>Panneer Manchurian</td><td>150</td></tr>
+                <tr><td>Panneer 65</td><td>150</td></tr>
+                <tr><td>Panneer Swasthik</td><td>200</td></tr>
+                <tr><td>Panneer Methi Masala</td><td>150</td></tr>
+                <tr><td>Panneer Kadai</td><td>150</td></tr>
+                <tr><td>Panneer Kurma</td><td>150</td></tr>
+                <tr><td>Panneer Butter Masala</td><td>150</td></tr>
+                <tr><td>Panneer Fried Rice</td><td>130</td></tr>
+                <tr><td>Palak Panneer</td><td>150</td></tr>
+            </tbody>
+        </table>
+
+        <h2>Roti Items</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dish Name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Roti</td><td>20</td></tr>
+                <tr><td>Kulcha</td><td>30</td></tr>
+                <tr><td>Butter Nan</td><td>40</td></tr>
+            </tbody>
+        </table>
+
+        <h2>Dal Items</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dish Name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Dal</td><td>70</td></tr>
+                <tr><td>Dal Tadka</td><td>80</td></tr>
+            </tbody>
+        </table>
+
+        <h2>Gobi Items</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dish Name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Gobi Manchurian</td><td>80</td></tr>
+                <tr><td>Gobi Chilly</td><td>80</td></tr>
+                <tr><td>Gobi 65</td><td>80</td></tr>
+                <tr><td>Gobi Pepper Dry</td><td>80</td></tr>
+                <tr><td>Fingerchips</td><td>100</td></tr>
+                <tr><td>Onion Pakoda</td><td>80</td></tr>
+            </tbody>
+        </table>
+
+        <h2>Mushroom Items</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dish Name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Mushroom Guntur</td><td>130</td></tr>
+                <tr><td>Mushroom Kabab</td><td>130</td></tr>
+                <tr><td>Mushroom Pepper Dry</td><td>130</td></tr>
+                <tr><td>Mushroom Chilly</td><td>130</td></tr>
+                <tr><td>Mushroom 65</td><td>130</td></tr>
+                <tr><td>Mushroom Manchurian</td><td>130</td></tr>
+                <tr><td>Mushroom Masala</td><td>130</td></tr>
+                <tr><td>Mushroom Hyderabadi</td><td>140</td></tr>
+                <tr><td>Mushroom Butter Masala</td><td>130</td></tr>
+                <tr><td>Mushroom Fried Rice</td><td>130</td></tr>
+            </tbody>
+        </table>
+
+        <h2>Veg Curry Items</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dish Name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Vegetable Curry</td><td>100</td></tr>
+                <tr><td>Kaju Kadai</td><td>140</td></tr>
+                <tr><td>Kaju Masala</td><td>140</td></tr>
+                <tr><td>Veg Kadai</td><td>140</td></tr>
+                <tr><td>Veg Guntur</td><td>140</td></tr>
+                <tr><td>Tomato Curry</td><td>90</td></tr>
+                <tr><td>Methi Malai</td><td>150</td></tr>
+                <tr><td>Capsicum Masala</td><td>100</td></tr>
+            </tbody>
+        </table>
+
+        <h2>Egg Items</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dish Name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Egg Dal</td><td>90</td></tr>
+                <tr><td>Egg Rice</td><td>80</td></tr>
+                <tr><td>Egg Masala</td><td>100</td></tr>
+                <tr><td>Egg Biryani</td><td>120</td></tr>
+                <tr><td>Egg Pepper Dry</td><td>90</td></tr>
+                <tr><td>Boiled Egg</td><td>20</td></tr>
+                <tr><td>Egg Kheema</td><td>100</td></tr>
+                <tr><td>Egg Mogli</td><td>100</td></tr>
+                <tr><td>Egg Burgi</td><td>60</td></tr>
+                <tr><td>Egg Pakoda</td><td>100</td></tr>
+                <tr><td>Hamlet</td><td>40</td></tr>
+                <tr><td>Half Boiled</td><td>20</td></tr>
+                <tr><td>Double Roast</td><td>20</td></tr>
+                <tr><td>Egg Tomato Rice</td><td>100</td></tr>
+                <tr><td>Egg Chilly</td><td>100</td></tr>
+            </tbody>
+        </table>
+
+        <h2>Chicken Dry Items</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dish Name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Guntur Chicken</td><td>140</td></tr>
+                <tr><td>Kabab</td><td>130</td></tr>
+                <tr><td>Pepper Dry</td><td>140</td></tr>
+                <tr><td>Chicken Gowathy</td><td>150</td></tr>
+                <tr><td>Garlic Chicken</td><td>150</td></tr>
+                <tr><td>Lemon Chicken</td><td>150</td></tr>
+                <tr><td>Chilly Chicken</td><td>150</td></tr>
+                <tr><td>Chicken 65</td><td>150</td></tr>
+                <tr><td>Chicken Manchurian</td><td>150</td></tr>
+                <tr><td>Chicken Fry</td><td>130</td></tr>
+            </tbody>
+        </table>
+
+        <h2>Fish Items</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dish Name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Fish Guntur</td><td>150</td></tr>
+                <tr><td>Fish Kabab</td><td>150</td></tr>
+                <tr><td>Fish Pepper Dry</td><td>150</td></tr>
+            </tbody>
+        </table>
+
+        <h2>Mutton Items</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dish Name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Mutton Masala</td><td>160</td></tr>
+                <tr><td>Mutton Hyderabad</td><td>170</td></tr>
+                <tr><td>Mutton Kabab</td><td>170</td></tr>
+                <tr><td>Mutton Biryani</td><td>170</td></tr>
+                <tr><td>Mutton Fry</td><td>160</td></tr>
+            </tbody>
+        </table>
+
+        <h2>Chicken Items</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dish Name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Chicken Fried Rice</td><td>140</td></tr>
+                <tr><td>Chicken Biryani</td><td>120</td></tr>
+            </tbody>
+        </table>
+
+        <h2>Chicken Bone</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dish Name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Chicken Masala</td><td>140</td></tr>
+                <tr><td>Chicken Hyderabadi</td><td>150</td></tr>
+                <tr><td>Guntur Gravy</td><td>150</td></tr>
+                <tr><td>Chicken Butter Masala</td><td>150</td></tr>
+                <tr><td>Hyderabad Gravy</td><td>150</td></tr>
+                <tr><td>Kabab</td><td>140</td></tr>
+                <tr><td>Lemon Chicken</td><td>150</td></tr>
+                <tr><td>Garlic Chicken</td><td>150</td></tr>
+                <tr><td>Cashew Nut Chicken</td><td>150</td></tr>
+            </tbody>
+        </table>
+    
+        <h2>Chicken Boneless</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dish Name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Butter Chicken</td><td>150</td></tr>
+                <tr><td>Chicken Hyderabadi</td><td>150</td></tr>
+                <tr><td>Guntur Gravy</td><td>150</td></tr>
+                <tr><td>Chicken Masala</td><td>150</td></tr>
+                <tr><td>Boneless Gravy</td><td>150</td></tr>
+                <tr><td>Kabab</td><td>150</td></tr>
+            </tbody>
+        </table>
+    
+    </section>
+
+    <script>
+        // Toggle dark mode
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+</html>
